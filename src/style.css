@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+@keyframes pulse-contrast {
+    0% {
+      filter: contrast(0);
+      opacity: 0.5;
+    }
+    50% {
+      filter: contrast(1);
+      opacity: 1;
+    }
+    100% {
+      filter: contrast(0);
+      opacity: 0.5;
+    }
+  }
+
+  .animate-contrast-pulse {
+    animation: pulse-contrast 2s ease-in-out infinite;
+  }
